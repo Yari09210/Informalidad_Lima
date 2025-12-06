@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-        <a href="Principal.html" class="logo"><span></span>Mesa Redonda</a>
+        <a href="Principal.html" class="logo"><span></span>MESA REDONDA</a>
         
-        <nav class="navbar">
-            <a href="#Opción 1" >Opción 1</a>
-            <a href="" >Opción 2</a>
-            <a href="" >Opción 3</a>
+        <div class="menu-btn" id="menu-btn"> ☰ </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="#Opción 1" >CRÓNICA</a>
+            <a href="" >ARCHIVO VISUAL</a>
+            <a href="" >TESTIMONIO</a>
         </nav>
     </header>
 
@@ -27,10 +29,13 @@
             <div class="footer-line-secondary"></div>
 
             <p class="copy">© 2025 – Todos los derechos reservados.</p>
-
-            <p class="footer-extra">Investigación y documentación audiovisual</p>
         </div>
     </footer>
 
+<script> 
+    const btn = document.getElementById("menu-btn"); 
+    const nav = document.getElementById("navbar"); 
+    btn.onclick = () => { nav.classList.toggle("active"); }; 
+</script> 
 </body>
 </html>

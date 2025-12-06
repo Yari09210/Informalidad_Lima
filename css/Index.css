@@ -32,7 +32,7 @@ header{
 }
 
 header .logo{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color:#fff;
     letter-spacing: 1px;
@@ -45,7 +45,7 @@ header .navbar{
 
 header .navbar a{
     color: #fff;
-    font-size: 1.4rem; 
+    font-size: 1rem; 
     position: relative;
 }
 
@@ -73,10 +73,20 @@ header .navbar a:hover{
 
 .menu-btn{
     display: none;
-    font-size: 2.3rem; 
-    color: #fff;
+    padding: .3rem .9rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    color: #f4dada;
     cursor: pointer;
+    transition: .3s ease;
 }
+
+.menu-btn:hover{
+    background: rgba(176,71,71,0.25);
+}
+
+
 
 @media(max-width: 768px){
 
@@ -92,20 +102,29 @@ header .navbar a:hover{
         width: 100%;
         flex-direction: column;
         text-align: center;
-        padding: .8rem 0;
+
+        /* MENÚ MÁS PEQUEÑO */
+        padding: .5rem 0;
+
+        /* altura visual menor */
+        gap: .3rem;
+
         display: none;
         box-shadow: 0 3px 10px rgba(0,0,0,0.4);
     }
 
+    /* TAMANO DE LETRA MÁS PEQUEÑO */
     header .navbar a{
-        padding: .8rem 0;
-        font-size: 1.6rem; 
+        padding: .5rem 0;
+        font-size: 1.2rem;
     }
 
+    /* ACTIVA EL MENÚ */
     .navbar.active{
         display: flex;
     }
 }
+
 
 
 /* ================= FOOTER ================= */
@@ -188,14 +207,6 @@ header .navbar a:hover{
     margin-top: 1rem;
 }
 
-/* Texto extra cinematográfico */
-.footer-extra{
-    font-size: 0.85rem;
-    color: #bfa3a3;
-    opacity: 0.65;
-    margin-top: .5rem;
-    letter-spacing: 1px;
-}
 
 /* Responsive */
 @media(max-width: 600px){
